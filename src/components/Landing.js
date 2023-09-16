@@ -33,6 +33,7 @@ const Landing = () => {
 
     return (
         <>
+            <h1 style={{margin:"2rem 0px -1rem 0px"}}>Farhacrypto</h1>
             <input type='text' placeholder='Search' value={search} onChange={searchHandeler}  className={styles.input} />   
             {
                 searchedCoin.length ?

@@ -1,52 +1,80 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 40px;
-    font-size: 12px;
-    color: #212529;
-    border-bottom: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  font-size: 12px;
+  color: #212529;
+  border-bottom: 1px solid silver;
+}
+
+.container:last-child {
+  border: none;
+}
+
+.image {
+  width: 30px;
+}
+
+.name {
+  width: 140px;
+  font-size: 14px;
+  margin-left: 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #333333;
+}
+
+.symbol {
+  text-align: left;
+  width: 100px;
+}
+
+.currentPrice {
+  text-align: left;
+  width: 100px;
+}
+
+.greenPriceChange,
+.redPriceChange {
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.redPriceChange {
+  color: rgb(255, 38, 38);
+}
+
+.greenPriceChange {
+  color: rgb(0, 204, 0);
+}
+
+
+@media (max-width: 440px) {
+  .marketCap {
+    display: none;
   }
-  
-  .container:last-child {
-    border: none;
-  }
-  
-  .image {
-    width: 30px;
-  }
-  
-  .name {
-    width: 140px;
-    font-size: 14xp;
-    margin-left: 15px;
-    text-align: left;
-    font-weight: bold;
-    color: #333333;
-  }
-  
-  .symbol {
-    text-align: left;
-    width: 100px;
-  }
-  
-  .currentPrice {
-    text-align: left;
-    width: 100px;
-  }
-  
   .greenPriceChange,
   .redPriceChange {
-    width: 100px;
-    text-align: left;
-    font-weight: bold;
+    width: 30px;
+    text-align: right;
   }
-  
-  .redPriceChange {
-    color: rgb(255, 38, 38);
+  .name {
+    width: 80px;
+    /* margin-right: 25px; */
   }
-  
-  .greenPriceChange {
-    color: rgb(0, 204, 0);
+  .symbol {
+    width: 50px;
+    text-align: center;
+    margin: auto 10px;
+
   }
-  
+  .currentPrice {
+    width: 80px;
+    text-align: center;
+  }
+  .container {
+    padding: 15px 20px;
+  }
+}
